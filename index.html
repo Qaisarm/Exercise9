@@ -1,88 +1,130 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
-  <!-- Style CSS-->
-  <link rel="stylesheet" href="style.css">
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="bishbosh.js" type="text/javascript"></script>
-  <title>JavaScript Exercise </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <!-- Style CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="bishbosh.js" type="text/javascript"></script>
+    <title>JavaScript Exercise </title>
 </head>
 <body>
 
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
 
 
+        </div>
       </div>
-    </div>
-  </nav>
-  <header> Bish-Bosh 2.0 </header>
-  <div class="container section">
-      <div class="party">
-        <div class="row">
-          <div class="col-md-6">
-  <div class = "input">
-    Loop Value = <input type="number" placeholder="Type a Number.." id="myLoopInput"> <br />
-    First Divisor = <input type="number" placeholder="Type a Number.." id="myDivisorOneInput"><br />
-    Second Divisor = <input type="number" placeholder="Type a Number.." id="myDivisorTwoInput"><br />
-    <button type="button" onclick="bishBosh();">Start Bish Bosh</button>
-    <p> Loop Value :</p><p id= "demo1"></p>
-    <p> Divisor One:</p><p id= "demo2"></p>
-    <p> Divisor Two :</p><p id= "demo3"></p>
-    <p> BishBosh:</p><p id= "demo4"></p>
-  </div>
-</div>
-</div>
-</div>
-</div>
-  <!-- Footer -->
-  <footer id= "footer">
+    </nav>
+    <header> Bish-Bosh 2.0 </header>
+
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; April 2020</p>
-      <p class="m-0 text-center text-white">Webmaster: Qaisar Mukhtar</p>
-    </div>
-  </footer>
+    <div class="container section">
+      <p class="m-5">&nbsp;</p>
+      <br>
+      <h1> Description:</h1>
+      <p> Bish-Bosh lists all numbers between 1 and 100, but some exceptions:
+        If the number is evenly divisible 3 listed 'Bish' instead of century.
+        If the number is divisible by 4 lists ' Bosh ' instead the number.
+         If the number is divisible by both 3 and 4 are written " Bish-Bosh " instead of the number. <br></p>
+
+        <div class="inputvalue">
+          <div class="row">
+            <div class="col-md-12">
+
+  <br>
+  <br>
+  <p class="m-5">&nbsp;</p>
+      Loop Value = <input type="number" placeholder="Type a Number.." id="myLoopInput">
+       <br>
+       <br>
+       <p class="m-5">&nbsp;</p>
+      First Divisor = <input type="number" placeholder="Type a Number.." id="myDivisorOneInput">
+      <br>
+      <br>
+      <p class="m-5">&nbsp;</p>
+      Second Divisor = <input type="number" placeholder="Type a Number.." id="myDivisorTwoInput">
+      <br>
+      <br>
+      <p class="m-5">&nbsp;</p>
+      <button class="button" type="button" onclick="bishBosh();">Start Bish Bosh</button>
+      <br>
+      <br>
+      <p class="m-5">&nbsp;</p>
+      <p> Loop Value :</p><p id= "demo1"></p>
+      <br>
+      <br>
+      <p class="m-5">&nbsp;</p>
+      <p> Divisor One:</p><p id= "demo2"></p>
+      <br>
+      <br>
+      <p class="m-5">&nbsp;</p>
+      <p> Divisor Two :</p><p id= "demo3"></p>
+      <br>
+      <br>
+
+      <p> BishBosh Values: <br> <p  id= "demo4"></p></p>
+      <br>
+      <br>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="push"></div>
+
+  </div>
+  <p class="m-1">&nbsp;</p>
+    <!-- Footer -->
+    <footer class= "footer">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; April 2020</p>
+        <p class="m-0 text-center text-white">Webmaster: Qaisar Mukhtar</p>
+      </div>
+    </footer>
 
 
-  <!--<script>
-    let start = 1,
-    end= 100;
-    console.log(start);
-    console.log(end);
-    for ( i=start; i <= end; i++)
-    {
-      if (i % 3 == 0 && i % 4 == 0 )
-      /* short form
-      if (i % 12 == 0 )
-      as first number that is both divisiable by 3 and 4 is 12
-      and the next will be 24 and so on
-      */
-      console.log("BishBosh");
-      else if (i % 3 == 0)
-      console.log("Bish");
-      else if (i % 4 == 0)
-      console.log("Bosh");
-      else
-      console.log(i);
-    }
+    <!--<script>
 
-  </script> -->
-</body>
+    bish bash for the console
+    
+      let start = 1,
+      end= 100;
+      console.log(start);
+      console.log(end);
+      for ( i=start; i <= end; i++)
+      {
+        if (i % 3 == 0 && i % 4 == 0 )
+        /* short form
+        if (i % 12 == 0 )
+        as first number that is both divisiable by 3 and 4 is 12
+        and the next will be 24 and so on
+        */
+        console.log("BishBosh");
+        else if (i % 3 == 0)
+        console.log("Bish");
+        else if (i % 4 == 0)
+        console.log("Bosh");
+        else
+        console.log(i);
+      }
 
-</html>
+    </script> -->
+  </body>
+
+  </html>
